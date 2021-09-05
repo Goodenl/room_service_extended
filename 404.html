@@ -1,0 +1,11 @@
+<script>
+    let path = window.location.pathname.slice(1);
+    const search = window.location?.search;
+    
+    if (search) {
+        path += search
+    }
+
+    localStorage.setItem('path', path);
+    window.location.href='../';
+</script>
